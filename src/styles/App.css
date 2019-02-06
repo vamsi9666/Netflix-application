@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+.App {
+  background: black;
+  padding:2% 0 0 2%;
+  height: 100vh;
+}
+
+.mylistMargin{
+  margin-bottom: 8px;
+}
+
+.netflix-txt{
+  padding-bottom: 10px;
+  height: 20px;
+  width: 80px;
+}
+
+.header-text {
+  font-size: 15px;
+  font-family:'Montserrat', sans-serif;
+  color: white;
+}
+
+.thumbnail-cont {
+  position: relative;
+}
+
+.thumbnail-cont:hover> .btn {
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    padding: 8px 0px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn {  
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+}
+
+button:focus {
+    outline:0;
+}
+
+.main-list-cont{
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -10px;
+}
+
+.thumbnail {
+  width:100%;
+  height:20%;
+}
+
+.list-cont:hover{
+  /*padding: 4%;*/
+  transform: scale(1.20);
+}
+
+.list-cont{
+  transition: transform 200ms ease;
+  padding: 10px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.no-items-text {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.list-titles {
+  color: white;
+}
